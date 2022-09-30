@@ -23,6 +23,6 @@ class game:
         if carda.value < cardb.value and hilo == "h":
             self.score += 100
         elif carda.value > cardb.value and hilo == "l":
-            self.score += 100
+            self.score -= 75
 
         print ("Score: " + str(self.score))
