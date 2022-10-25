@@ -92,7 +92,7 @@ class Director:
         else:
             print()
             print(f"You rolled a duplicate {value}.")
-            player.add_coins(self._table.get_coins())
+            player.add_coins(int(self._table.get_coins()))
             self._table.clear_coins()
             player.set_playing(False)
 
